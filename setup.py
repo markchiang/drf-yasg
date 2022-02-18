@@ -5,7 +5,6 @@ from __future__ import print_function
 import io
 import os
 import sys
-import django_heroku
 
 from setuptools import find_packages, setup
 
@@ -105,5 +104,3 @@ except (ImportError, LookupError) as e:
         print("failed to detect version, package was built with dummy version " + dummy_version, file=sys.stderr)
     else:
         raise
-
-django_heroku.settings(locals())
